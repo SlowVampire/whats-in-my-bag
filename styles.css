@@ -87,6 +87,11 @@ h1 {
     font-weight: 600;
 }
 
+body {
+    background-color: #1a1a1d; /* deep charcoal with a hint of blue */
+    color: #f2f2f2; /* soft white text */
+}
+
 
 /* Desktop Enhancements */
 @media (min-width: 700px) {
