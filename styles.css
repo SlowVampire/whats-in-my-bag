@@ -5,93 +5,90 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f7f7f7;
-    color: #222;
-    padding: 1rem;
+    background-color: #1a1a1d; /* deep charcoal */
+    color: #f2f2f2; /* soft white */
+    padding: 1.25rem;
 }
 
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
-/* Club Card Layout */
+/* Club Card */
 .club-card {
-    display: flex;
-    align-items: flex-start;
-    background: #fff;
-    border-radius: 12px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    background: rgba(255, 255, 255, 0.05); /* subtle glass effect */
+    padding: 1.5rem;
+    border-radius: 14px;
+    margin-bottom: 1.75rem;
+    backdrop-filter: blur(6px);
+    text-align: center;
 }
 
-/* Club Image */
-.club-image {
-    width: 90px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 1rem;
+/* Club Name */
+.club-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+}
+
+/* Club Head Image */
+.club-head-image {
+    width: 85%;
+    max-width: 330px;
+    display: block;
+    margin: 0.75rem auto 1rem;
+    border-radius: 10px;
     object-fit: contain;
 }
 
-/* Club Info */
-.club-info {
-    flex: 1;
-}
-
-.club-name {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 0.3rem;
-}
-
-.shaft-text {
-    font-size: 0.95rem;
-    color: #555;
-    margin-left: 0.25rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Optional Shaft Image */
+/* Shaft Image */
 .shaft-image {
-    width: 100%;
+    width: 75%;
     max-width: 260px;
-    border-radius: 6px;
-    margin-top: 0.25rem;
+    display: block;
+    margin: 1rem auto 0.5rem;
+    border-radius: 8px;
+    object-fit: contain;
 }
 
-/* Specs list styling */
+/* Shaft Text */
+.shaft-text {
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Specs List */
 .club-specs {
     list-style: none;
-    margin-top: 0.5rem;
-    margin-left: 0.25rem;
     padding-left: 0;
-    font-size: 0.9rem;
-    color: #444;
+    margin: 0.5rem auto 1rem;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    max-width: 260px;
 }
 
 .club-specs li {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 
 .club-specs strong {
     font-weight: 600;
+    color: #ffffff;
 }
-
-body {
-    background-color: #1a1a1d; /* deep charcoal with a hint of blue */
-    color: #f2f2f2; /* soft white text */
-}
-
 
 /* Desktop Enhancements */
 @media (min-width: 700px) {
@@ -100,14 +97,21 @@ body {
     }
 
     .club-card {
-        padding: 1.25rem;
-    }
-
-    .club-image {
-        width: 120px;
+        padding: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .club-name {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+    }
+
+    .club-head-image {
+        max-width: 360px;
+    }
+
+    .shaft-image {
+        max-width: 300px;
     }
 }
