@@ -114,4 +114,10 @@ h1 {
     .shaft-image {
         max-width: 300px;
     }
+    .secondary-putter-image {
+    margin-top: 0.75rem;
+    width: 75%; /* slightly smaller than main image */
+    max-width: 260px;
+    opacity: 0.95; /* subtle visual hierarchy */
 }
+
